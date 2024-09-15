@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px;
+    background-color: pink;
+   /*  margin-bottom: 50px; */
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+
+}
+article {
+    float: left; /*membuat mempet ke kiri*/
+    padding: 20px;
+    width: 80%;
+    background-color: bisque;
+    min-height: 400px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Create two columns/boxes that floats next to each other */
+.nav {
+    float: left;
+    width: 20%;
+    min-height: 400px; /* only for demonstration, should be removed */
+    background-color: beige;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+ .drop {
+    font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+ }
+
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px;
+    background-color: rgb(201, 237, 202);
+    margin-bottom: 0px;
+}
